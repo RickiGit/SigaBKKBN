@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.altrovis.sigabkkbn.ActivityMain">
+
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/ic_settings">
+        <menu>
+            <item
+                android:id="@+id/menuProfil"
+                android:title="Profil"
+                android:icon="@mipmap/ic_user"/>
+            <item
+                android:id="@+id/menuPengaturan"
+                android:title="Pengaturan"
+                android:icon="@mipmap/ic_setting"/>
+            <item
+                android:id="@+id/menuKeluar"
+                android:title="Keluar"
+                android:icon="@mipmap/ic_logout"/>
+        </menu>
+    </item>
+</menu>

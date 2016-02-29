@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">PK BKKBN</string>
+
+    <string-array name="provinsi">
+        <item>DKI Jakarta</item>
+    </string-array>
+
+    <string-array name="kota">
+        <item>Jakarta Selatan</item>
+    </string-array>
+
+    <string-array name="kecamatan">
+        <item>Tebet</item>
+        <item>Setiabudi</item>
+        <item>Mampang Prapatan</item>
+        <item>Pasar Minggu</item>
+        <item>Kebayoran Lama</item>
+    </string-array>
+
+    <string-array name="desa">
+        <item>Tebet Timur</item>
+        <item>Tebet Barat</item>
+    </string-array>
+
+    <string-array name="rw">
+        <item>001.01</item>
+        <item>002.02</item>
+    </string-array>
+
+    <string-array name="rt">
+        <item>001.01</item>
+        <item>002.02</item>
+    </string-array>
+</resources>
