@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_form"
+    tools:context="com.altrovis.sigabkkbn.ActivityPembangunanKeluarga1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:paddingBottom="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Keluarga membeli satu stel pakaian baru untuk seluruh anggota keluarga minimal setahun sekali"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Seluruh anggota keluarga makan minimal 2 kali sehari"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidakBerlaku"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Seluruh anggota keluarga bila sakit berobat ke fasilitas kesehatan"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Seluruh anggota keluarga memiliki pakaian yang berbeda untuk di rumah, bekerja/bersekolah dan bepergian"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Seluruh anggota keluarga makan daging/ikan/telur minimal seminggu sekali"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Seluruh anggota keluarga menjalankan ibadah sesuai ketentuan agama yang dianut"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Pasangan usia subur dengan dua anak atau lebih menjadi peserta KB"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidakBerlaku"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Keluarga memiliki tabungan dalam bentuk uang/emas/tanah/hewan minimal senilaai 1.000.000,-"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Keluarga memiliki kebiasaan berkomunikasi dengan seluruh anggota keluarga"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Keluarga ikut dalam kegiatan sosial di lingkungan RT"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11. Keluarga memiliki akses informasi dari surat kabar/majalah/radio/tv/lainnya"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga11"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12. Keluarga memiliki anggota yang menjadi pengurus kegiatan sosial"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga12"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13. Keluarga memiliki balita ikut kegiatan Posyandu"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga13"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidakBerlaku"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14. Keluarga memiliki balita ikut kegiatan BKB"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga14"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidakBerlaku"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15. Keluarga memiliki remaja ikut kegiatan BKR"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga15"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidakBerlaku"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16. Ada anggota keluarga masih remaja ikut PIK-R/M"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga16"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidakBerlaku"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17. Keluarga lansia atau memiliki lansia ikut kegiatan BKL"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga17"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidakBerlaku"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18. Keluarga ikut kegiatan UPPKS"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga18"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/YaTidak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+
+            <Button
+                android:id="@+id/ButtonNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToPembangunanKeluarga2"
+                android:text="Lanjut"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_style_button"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

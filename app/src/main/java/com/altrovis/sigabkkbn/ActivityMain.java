@@ -50,6 +50,9 @@ public class ActivityMain extends AppCompatActivity {
                     case 2: Intent intent3 = new Intent(ActivityMain.this, ActivityPencarian.class);
                         startActivity(intent3);
                         break;
+                    case 5: Intent intent6 = new Intent(ActivityMain.this, ActivityKeluargaBerencana.class);
+                        startActivity(intent6);
+                        break;
                     default:break;
                 }
             }
