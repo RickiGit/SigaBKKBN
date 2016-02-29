@@ -17,6 +17,23 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Nomor Kendali"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextNoKendali"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Provinsi"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
@@ -24,7 +41,7 @@
                 android:id="@+id/SpinnerProvinsi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/custom_form_input"
+                android:background="#FFFFFF"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -37,7 +54,7 @@
                 android:id="@+id/SpinnerKabupaten"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/custom_form_input"
+                android:background="#FFFFFF"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -50,7 +67,7 @@
                 android:id="@+id/SpinnerKecamatan"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/custom_form_input"
+                android:background="#FFFFFF"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -63,7 +80,7 @@
                 android:id="@+id/SpinnerDesa"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/custom_form_input"
+                android:background="#FFFFFF"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -74,11 +91,11 @@
                 android:layout_marginBottom="10dp"/>
 
             <Spinner
-            android:id="@+id/SpinnerRW"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/custom_form_input"
-            android:layout_marginBottom="10dp"></Spinner>
+                android:id="@+id/SpinnerRW"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
                 android:layout_width="match_parent"
@@ -90,7 +107,7 @@
                 android:id="@+id/SpinnerRT"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/custom_form_input"
+                android:background="#FFFFFF"
                 android:layout_marginBottom="15dp"></Spinner>
 
             <Button

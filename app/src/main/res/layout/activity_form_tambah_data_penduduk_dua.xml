@@ -106,10 +106,10 @@
                 android:layout_marginBottom="15dp"></Spinner>
 
             <Button
-                android:id="@+id/ButtonNext"
+                android:id="@+id/ButtonSave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lanjut"
+                android:text="LANJUT"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/custom_style_button"/>
         </LinearLayout>

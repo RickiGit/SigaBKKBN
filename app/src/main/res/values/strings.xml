@@ -31,4 +31,66 @@
         <item>001.01</item>
         <item>002.02</item>
     </string-array>
+
+    <string-array name="hubungan_kk">
+        <item>KK</item>
+        <item>Istri</item>
+        <item>Anak</item>
+        <item>Lain-Lain</item>
+    </string-array>
+
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Konghucu</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="pekerjaan">
+        <item>Petani</item>
+        <item>Nelayan</item>
+        <item>Pedagang</item>
+        <item>PNS/TNI/Polri</item>
+        <item>Pegawai Swasta</item>
+        <item>Wiraswasta</item>
+        <item>Pensiunan</item>
+        <item>Pekerja Lepas</item>
+        <item>Lainnya</item>
+        <item>Tidak/Belum Bekerja</item>
+    </string-array>
+
+    <string-array name="jenis_kelamin">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="pendidikan">
+        <item>Tidak Tamat SD/MI</item>
+        <item>Masih SD/MI</item>
+        <item>Tamat SD/MI</item>
+        <item>Masih SLTP/MTSN</item>
+        <item>Tamat SLTP/MTSN</item>
+        <item>Masih SLTA/MA</item>
+        <item>Tamat SLTA/MA</item>
+        <item>Masih PT/Akademi</item>
+        <item>Tamat PT/Akademi</item>
+        <item>Tidak/Belum Sekolah</item>
+    </string-array>
+
+    <string-array name="status_kawin">
+        <item>Belum Kawin</item>
+        <item>Kawin</item>
+        <item>Janda/Duda</item>
+    </string-array>
+
+    <string-array name="jkn">
+        <item>BPJS-PBI</item>
+        <item>BPJS-NON PBI</item>
+        <item>Non BPJS</item>
+        <item>Tidak Memiliki</item>
+    </string-array>
+
 </resources>
