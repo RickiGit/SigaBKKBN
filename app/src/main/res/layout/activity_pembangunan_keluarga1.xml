@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidakBerlaku"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -55,7 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:layout_marginBottom="15dp"/>
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_spinner"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -68,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -82,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -96,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
 
@@ -112,7 +113,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidakBerlaku"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -126,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
 
@@ -141,7 +142,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -155,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
 
@@ -170,7 +171,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
 
@@ -185,7 +186,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -199,7 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidakBerlaku"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -213,7 +214,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidakBerlaku"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -227,7 +228,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidakBerlaku"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -241,7 +242,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidakBerlaku"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -255,7 +256,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidakBerlaku"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
             <TextView
@@ -269,7 +270,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/YaTidak"
-                android:background="@drawable/custom_form_input"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
 
 

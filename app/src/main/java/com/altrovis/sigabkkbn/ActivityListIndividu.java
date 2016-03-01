@@ -46,7 +46,7 @@ public class ActivityListIndividu extends AppCompatActivity {
             listViewIndividu.setAdapter(adapter);
         }
 
-        goToPageKependudukan();
+        goToPageKeluargaBerencana();
 
     }
 
@@ -55,12 +55,12 @@ public class ActivityListIndividu extends AppCompatActivity {
         buttonNext = (Button)findViewById(R.id.ButtonNext);
     }
 
-    public void goToPageKependudukan()
+    public void goToPageKeluargaBerencana()
     {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ActivityListIndividu.this, ActivityFormTambahDataPendudukDua.class);
+                Intent intent = new Intent(ActivityListIndividu.this, ActivityKeluargaBerencana.class);
                 startActivity(intent);
             }
         });
