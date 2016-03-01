@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_form"
+    tools:context="com.altrovis.sigabkkbn.ActivityPembangunanKeluarga2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:paddingBottom="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19. Apakah jenis atap terluas?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga19"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/JenisAtapRumahTerluas"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20. Apakah jenis dinding terluas?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga20"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/JenisDindingRumahTerluas"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="21. Apakah jenis lantai terluas"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga21"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/JenisLantaiRumahTerluas"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22. Apakah sumber penerangan utama?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga22"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/SumberPeneranganUtama"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23. Apakah sumber air minum?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga23"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/SumberAirMinum"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24. Apakah bahan bakar utama untuk memasak?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga24"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/BahanBakarUtamaUntukMemasak"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25. Apakah fasilitas tempat buang air besar?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga25"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/FasilitasTempatBuangAirBesar"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26. Status kepemilikan rumah/bangunan tempat tinggal"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPemabangunanKeluarga26"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/KepemilikanRumah"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="27. Berapa luas rumah/bangunan keseluruhan (m2)?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="m2"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="28. Berapa orang yang tinggal dan menetap di rumah/bagunan ini?"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="orang"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/ButtonNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToMainMenu"
+                android:text="Lanjut"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_style_button"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

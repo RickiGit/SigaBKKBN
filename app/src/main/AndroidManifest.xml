@@ -35,6 +35,12 @@
             android:name=".ActivityAddIndividu"
             android:parentActivityName=".ActivityListIndividu"
             android:windowSoftInputMode="stateHidden"></activity>
+            android:parentActivityName=".ActivityFormTambahDataPendudukSatu"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ActivityPencarian" />
+        <activity android:name=".ActivityKeluargaBerencana" />
+        <activity android:name=".ActivityPembangunanKeluarga1" />
+        <activity android:name=".ActivityPembangunanKeluarga2"></activity>
     </application>
 
 </manifest>

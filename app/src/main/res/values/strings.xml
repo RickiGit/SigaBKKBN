@@ -93,4 +93,139 @@
         <item>Tidak Memiliki</item>
     </string-array>
 
+
+    <string-array name="KesertaanBerKB">
+        <item>Pilih</item>
+        <item>Sedang</item>
+        <item>Pernah</item>
+        <item>Tidak Pernah</item>
+    </string-array>
+
+    <string-array name="MetodeKontrasepsi">
+        <item>Pilih</item>
+        <item>IUD</item>
+        <item>MOP</item>
+        <item>Suntik</item>
+        <item>Kondom</item>
+        <item>MOW</item>
+        <item>Implan</item>
+        <item>Pil</item>
+        <item>Tradisional</item>
+    </string-array>
+
+    <string-array name="InginPunyaAnak">
+        <item>Pilih</item>
+        <item>Ya, segera (kurang dari 2 tahun)</item>
+        <item>Ya, kemudian (lebih dari 2 tahun)</item>
+        <item>Tidak ingin punya anak lagi</item>
+    </string-array>
+
+    <string-array name="AlasanTidakBerKB">
+        <item>Pilih</item>
+        <item>Sedang hamil</item>
+        <item>Takut efek samping</item>
+        <item>Alasan fertilitas</item>
+        <item>Pelayanan KB jauh</item>
+        <item>Tidak menyetujui KB</item>
+        <item>Tidak mampu/mahal</item>
+        <item>Tidak tahu tentang KB</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="TempatPelayananKB">
+        <item>Pilih</item>
+        <item>RSUP/RSUD</item>
+        <item>Puskesmas</item>
+        <item>Pustu/Pusling/Bidan Desa</item>
+        <item>RS TNI</item>
+        <item>Klinik Pratama</item>
+        <item>Poskesdes/Polindes</item>
+        <item>RS POLRI</item>
+        <item>Praktek Dokter</item>
+        <item>Praktek Bidan</item>
+        <item>RS SWASTA</item>
+        <item>RS Pratama</item>
+        <item>Pelayanan Bergerak</item>
+        <item>Klinik Utama</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="YaTidak">
+        <item>Pilih</item>
+        <item>Ya</item>
+        <item>Tidak</item>
+    </string-array>
+
+    <string-array name="YaTidakBerlaku">
+        <item>Pilih</item>
+        <item>Ya</item>
+        <item>Tidak</item>
+        <item>Tidak Berlaku</item>
+    </string-array>
+
+    <string-array name="JenisAtapRumahTerluas">
+        <item>Pilih</item>
+        <item>Daun/Rumbia</item>
+        <item>Genteng/Sirap</item>
+        <item>Seng/Asbes</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="JenisDindingRumahTerluas">
+        <item>Pilih</item>
+        <item>Tembok</item>
+        <item>Bambu</item>
+        <item>Kayu/Seng</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="JenisLantaiRumahTerluas">
+        <item>Pilih</item>
+        <item>Ubin/Keramik/Marmer</item>
+        <item>Tanah</item>
+        <item>Semen/Papan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="SumberPeneranganUtama">
+        <item>Pilih</item>
+        <item>Listrik</item>
+        <item>Lampu Minyak</item>
+        <item>Genset/Diesel</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="SumberAirMinum">
+        <item>Pilih</item>
+        <item>Ledeng/Kemasan</item>
+        <item>Air Hujan/Air Sungai</item>
+        <item>Sumur Terlindung/Pompa</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="BahanBakarUtamaUntukMemasak">
+        <item>Pilih</item>
+        <item>Listrik/Gas</item>
+        <item>Arang/Kayu</item>
+        <item>Minyak Tanah</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="FasilitasTempatBuangAirBesar">
+        <item>Pilih</item>
+        <item>Jamban Sendiri</item>
+        <item>Jamban Umum</item>
+        <item>Jamban Bersama</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="KepemilikanRumah">
+        <item>Pilih</item>
+        <item>Milik Sendiri</item>
+        <item>Menumpang</item>
+        <item>Sewa/Kontrak</item>
+        <item>Lainnya</item>
+    </string-array>
+
+
 </resources>
