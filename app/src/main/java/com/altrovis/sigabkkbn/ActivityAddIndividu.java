@@ -30,9 +30,9 @@ public class ActivityAddIndividu extends AppCompatActivity {
         editTextNIK = (EditText)findViewById(R.id.EditTextNIK);
         editTextNama = (EditText)findViewById(R.id.EditTextNama);
         editTextTanggal = (EditText)findViewById(R.id.EditTextTanggal);
-        editTextBulan = (EditText)findViewById(R.id.EditTextNIK);
-        editTextTahun = (EditText)findViewById(R.id.EditTextNama);
-        editTextUmur = (EditText)findViewById(R.id.EditTextTanggal);
+        editTextBulan = (EditText)findViewById(R.id.EditTextBulan);
+        editTextTahun = (EditText)findViewById(R.id.EditTextTahun);
+        editTextUmur = (EditText)findViewById(R.id.EditTextUmur);
         buttonSave = (Button)findViewById(R.id.ButtonSave);
     }
 
@@ -41,9 +41,38 @@ public class ActivityAddIndividu extends AppCompatActivity {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String nama = editTextNama.getText().toString();
-                individu = new IndividuKeluarga(nama);
-                GlobalVariable.listIndividu.add(individu);
+                String nik = editTextNIK.getText().toString();
+                int tanggal = 0, bulan = 0, tahun = 0, umur = 0;
+                String textTanggal = editTextTanggal.getText().toString();
+                String textBulan = editTextBulan.getText().toString();
+                String textTahun = editTextTahun.getText().toString();
+                String textUmur = editTextUmur.getText().toString();
+
+                if(!textTanggal.matches("")){
+                    tanggal = Integer.parseInt(editTextTanggal.getText().toString());
+                }
+
+                if(!textBulan.matches("")){
+                    bulan = Integer.parseInt(editTextBulan.getText().toString());
+                }
+
+                if(!textTahun.matches("")){
+                    tahun = Integer.parseInt(editTextTahun.getText().toString());
+                }
+
+                if(!textUmur.matches("")){
+                    umur = Integer.parseInt(editTextUmur.getText().toString());
+                }
+
+                GlobalVariable.individu = new IndividuKeluarga();
+                GlobalVariable.individu.setNIK(nik);
+                GlobalVariable.individu.setNama(nama);
+                GlobalVariable.individu.setTanggal(tanggal);
+                GlobalVariable.individu.setBulan(bulan);
+                GlobalVariable.individu.setTahun(tahun);
+                GlobalVariable.individu.setUmur(umur);
 
                 Intent intent = new Intent(ActivityAddIndividu.this, ActivityFormTambahDataPendudukDua.class);
                 startActivity(intent);
