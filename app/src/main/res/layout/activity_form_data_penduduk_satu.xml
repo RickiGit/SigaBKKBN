@@ -41,8 +41,9 @@
                 android:id="@+id/SpinnerProvinsi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#FFFFFF"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dropdown"></Spinner>
 
             <TextView
                 android:layout_width="match_parent"
@@ -54,7 +55,7 @@
                 android:id="@+id/SpinnerKabupaten"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -67,7 +68,7 @@
                 android:id="@+id/SpinnerKecamatan"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -80,7 +81,7 @@
                 android:id="@+id/SpinnerDesa"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -94,7 +95,7 @@
                 android:id="@+id/SpinnerRW"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="10dp"></Spinner>
 
             <TextView
@@ -107,7 +108,7 @@
                 android:id="@+id/SpinnerRT"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"></Spinner>
 
             <Button
