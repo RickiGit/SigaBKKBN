@@ -84,7 +84,11 @@ public class ActivityListIndividu extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+        else if(id == android.R.id.home){
+            onBackPressed();
+        }
 
         return super.onOptionsItemSelected(item);
     }
+
 }
