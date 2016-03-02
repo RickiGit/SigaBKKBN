@@ -44,6 +44,7 @@ public class ActivityListIndividu extends AppCompatActivity {
             adapter = new IndividuAdapter(this, R.layout.item_list_individu, GlobalVariable.listIndividu);
             adapter.notifyDataSetChanged();
             listViewIndividu.setAdapter(adapter);
+
         }
 
         goToPageKeluargaBerencana();

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.altrovis.sigabkkbn.Entities.IndividuKeluarga;
@@ -31,7 +32,7 @@ public class IndividuAdapter extends ArrayAdapter<IndividuKeluarga> {
     }
 
     @Override
-    public View getView(int position, View view, ViewGroup viewGroup){
+    public View getView(final int position, View view, ViewGroup viewGroup){
 
         if(view == null){
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
@@ -40,8 +41,16 @@ public class IndividuAdapter extends ArrayAdapter<IndividuKeluarga> {
 
         TextView textViewNama = (TextView)view.findViewById(R.id.TextViewNama);
 
-        IndividuKeluarga individu = listOfIndividu.get(position);
+        final IndividuKeluarga individu = listOfIndividu.get(position);
         textViewNama.setText(individu.getNama());
+
+        ImageButton imageButtonHapus = (ImageButton)view.findViewById(R.id.ImageButtonDelete);
+        imageButtonHapus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         return view;
     }
