@@ -40,14 +40,20 @@
             android:parentActivityName=".ActivityListIndividu" />
         <activity android:name=".ActivityPembangunanKeluarga1" />
         <activity android:name=".ActivityPembangunanKeluarga2" />
-        <activity android:name=".ActivityFormPesertaKB1" />
-        <activity android:name=".ActivityFormPesertaKB2" />
-        <activity android:name=".ActivityFormPesertaKB3" />
-        <activity android:name=".ActivityFormPesertaKB4"></activity>
-        <activity android:name=".ActivityPembangunanKeluarga2" />
-        <activity android:name=".ActivityFormPesertaKB5" />
-        <activity android:name=".ActivityFormPesertaKB6" />
-        <activity android:name=".ActivityEditIndividu"></activity>
+        <activity android:name=".ActivityFormPesertaKB1"
+            android:parentActivityName=".ActivityMenuPesertaKB"/>
+        <activity android:name=".ActivityFormPesertaKB2"
+            android:parentActivityName=".ActivityFormPesertaKB1"/>
+        <activity android:name=".ActivityFormPesertaKB3"
+            android:parentActivityName=".ActivityFormPesertaKB2"/>
+        <activity android:name=".ActivityFormPesertaKB4"
+            android:parentActivityName=".ActivityFormPesertaKB3"/>
+        <activity android:name=".ActivityFormPesertaKB5"
+            android:parentActivityName=".ActivityFormPesertaKB4"/>
+        <activity android:name=".ActivityFormPesertaKB6"
+            android:parentActivityName=".ActivityFormPesertaKB5"/>
+        <activity android:name=".ActivityEditIndividu" />
+        <activity android:name=".ActivityMenuPesertaKB"></activity>
     </application>
 
 </manifest>

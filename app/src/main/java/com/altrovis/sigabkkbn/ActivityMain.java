@@ -30,7 +30,8 @@ public class ActivityMain extends AppCompatActivity {
         listOfMenu.add(new ItemMenu(2, "Pencarian", R.drawable.menu_pencarian));
         listOfMenu.add(new ItemMenu(3, "Peralatan", R.drawable.menu_peralatan));
         listOfMenu.add(new ItemMenu(4, "Laporan", R.drawable.menu_laporan));
-        listOfMenu.add(new ItemMenu(5, "Tentang", R.drawable.icon));
+        listOfMenu.add(new ItemMenu(5, "Peserta KB", R.drawable.menu_kb));
+        listOfMenu.add(new ItemMenu(6, "Tentang", R.drawable.icon));
         GridViewAdapter adapter = new GridViewAdapter(this, R.layout.item_gridview_menu, listOfMenu);
         gridView.setAdapter(adapter);
 
@@ -45,7 +46,7 @@ public class ActivityMain extends AppCompatActivity {
                     case 1: Intent intent2 = new Intent(ActivityMain.this, ActivityPencarian.class);
                         startActivity(intent2);
                         break;
-                    case 4: Intent intent6 = new Intent(ActivityMain.this, ActivityFormPesertaKB1.class);
+                    case 4: Intent intent6 = new Intent(ActivityMain.this, ActivityMenuPesertaKB.class);
                         startActivity(intent6);
                         break;
                     default:break;
