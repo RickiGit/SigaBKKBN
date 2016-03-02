@@ -255,5 +255,32 @@
         <item>Tubektomi</item>
         <item>Vasektomi</item>
     </string-array>
+    <string-array name="keadaanUmum">
+        <item>Baik</item>
+        <item>Sedang</item>
+        <item>Kurang</item>
+    </string-array>
 
+    <string-array name="yesNo">
+        <item>Ya</item>
+        <item>Tidak</item>
+    </string-array>
+
+    <string-array name="posisiRahim">
+        <item>Retrofleksi</item>
+        <item>Antefleksi</item>
+    </string-array>
+
+    <string-array name="alatObat">
+        <item>Suntikan 1 Bulanan</item>
+        <item>Suntikan 3 Bulanan</item>
+        <item>Pil</item>
+        <item>Kondom</item>
+        <item>Implan 1 batang</item>
+        <item>Implan 2 batang</item>
+        <item>IUD CuT 380A</item>
+        <item>IUD Lain-lain</item>
+        <item>Tubektomi</item>
+        <item>Vasektomi</item>
+    </string-array>
 </resources>

@@ -44,6 +44,10 @@
         <activity android:name=".ActivityFormPesertaKB2" />
         <activity android:name=".ActivityFormPesertaKB3" />
         <activity android:name=".ActivityFormPesertaKB4"></activity>
+        <activity android:name=".ActivityPembangunanKeluarga2" />
+        <activity android:name=".ActivityFormPesertaKB5" />
+        <activity android:name=".ActivityFormPesertaKB6" />
+        <activity android:name=".ActivityEditIndividu"></activity>
     </application>
 
 </manifest>
