@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_form"
+    tools:context="com.altrovis.sigabkkbn.ActivityFormPesertaKB1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:paddingBottom="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Faskes KB/Jaringan/Jejaring"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Provinsi"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextKodeProvisniFaskes"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Kabupate/Kota"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextKodeKabupatenFaskes"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Register Faskes KB"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextNoRegisterFaskesKB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Jaringan/Jejaring Faskes KB"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextNoJaringan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Keluarga Indonesia"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Provinsi"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextKodeProvisni"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Kabupate/Kota"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextKodeKabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Kecamatan"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextKodeKecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Kelurahan/Desa"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextKodeKelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Urut Keluarga"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/EditTextNoUrutKeluarga"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_form_input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+
+            <Button
+                android:id="@+id/ButtonNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lanjut"
+                android:onClick="goToFormPesertaKB2"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_style_button"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

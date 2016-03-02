@@ -45,7 +45,7 @@ public class ActivityMain extends AppCompatActivity {
                     case 1: Intent intent2 = new Intent(ActivityMain.this, ActivityPencarian.class);
                         startActivity(intent2);
                         break;
-                    case 5: Intent intent6 = new Intent(ActivityMain.this, ActivityKeluargaBerencana.class);
+                    case 4: Intent intent6 = new Intent(ActivityMain.this, ActivityFormPesertaKB1.class);
                         startActivity(intent6);
                         break;
                     default:break;

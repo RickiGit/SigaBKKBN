@@ -227,5 +227,33 @@
         <item>Lainnya</item>
     </string-array>
 
+    <string-array name="PenggunaanAsuransi">
+        <item>Pilih</item>
+        <item>BPJS Kesehatan</item>
+        <item>Lainnnya</item>
+        <item>Tidak</item>
+    </string-array>
+
+    <string-array name="StatusPesertaKB">
+        <item>Pilih</item>
+        <item>Baru Pertama kali</item>
+        <item>Pernah pakai alat KB berhenti sesudah bersalin/keguguran</item>
+        <item>Pernah pakai alat KB</item>
+        <item>Sedang ber-KB</item>
+    </string-array>
+
+    <string-array name="AlatKBTerakhir">
+        <item>Pilih</item>
+        <item>Suntikan 1 Bulanan</item>
+        <item>Suntikan 3 Bulanan</item>
+        <item>Pil</item>
+        <item>Kondom</item>
+        <item>Implan 1 Batang</item>
+        <item>Implan 2 Batang</item>
+        <item>IUD CuT 380A</item>
+        <item>IUD Lain-lain</item>
+        <item>Tubektomi</item>
+        <item>Vasektomi</item>
+    </string-array>
 
 </resources>
