@@ -203,7 +203,7 @@
                 android:id="@+id/ButtonNext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick=""
+                android:onClick="goToFormPesertaKB6"
                 android:text="Lanjut"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/custom_style_button"/>

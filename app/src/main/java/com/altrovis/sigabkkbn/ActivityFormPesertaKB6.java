@@ -1,7 +1,10 @@
 package com.altrovis.sigabkkbn;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 
 public class ActivityFormPesertaKB6 extends AppCompatActivity {
 
@@ -14,5 +17,20 @@ public class ActivityFormPesertaKB6 extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setTitle("Form Peserta KB (6/6)");
+    }
+
+    public void goToMenuAwal(View ev) {
+        Intent intent = new Intent(this, ActivityMain.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
