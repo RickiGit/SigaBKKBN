@@ -27,7 +27,8 @@
             android:name=".ActivityFormTambahDataPendudukDua"
             android:parentActivityName=".ActivityListIndividu"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".ActivityPencarian" />
+        <activity android:name=".ActivityPencarian"
+            android:parentActivityName=".ActivityMain"/>
         <activity
             android:name=".ActivityListIndividu"
             android:parentActivityName=".ActivityFormTambahDataPendudukSatu" />
