@@ -2,6 +2,7 @@ package com.altrovis.sigabkkbn.Bussines.DataKependudukan;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.altrovis.sigabkkbn.ActivityEditIndividu;
+import com.altrovis.sigabkkbn.Entities.GlobalVariable;
 import com.altrovis.sigabkkbn.Entities.IndividuKeluarga;
 import com.altrovis.sigabkkbn.R;
 
@@ -48,7 +51,18 @@ public class IndividuAdapter extends ArrayAdapter<IndividuKeluarga> {
         imageButtonHapus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                listOfIndividu.remove(position);
+                notifyDataSetChanged();
+            }
+        });
 
+        ImageButton imageButtonEdit = (ImageButton)view.findViewById(R.id.ImageButtonEdit);
+        imageButtonEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GlobalVariable.SELECTED_INDIVIDU = listOfIndividu.get(position);
+                Intent intent = new Intent(context, ActivityEditIndividu.class);
+                context.startActivity(intent);
             }
         });
 

@@ -9,5 +9,6 @@ public class GlobalVariable {
 
     public static ArrayList<IndividuKeluarga> listIndividu = new ArrayList<IndividuKeluarga>();
     public static IndividuKeluarga individu;
+    public static IndividuKeluarga SELECTED_INDIVIDU = null;
 
 }
