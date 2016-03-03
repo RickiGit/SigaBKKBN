@@ -21,6 +21,11 @@ public class ActivityAddIndividu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_individu);
 
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setTitle("Individu (1/2)");
+
         inisialisasiLayout();
         addIndividu();
     }
@@ -50,33 +55,41 @@ public class ActivityAddIndividu extends AppCompatActivity {
                 String textTahun = editTextTahun.getText().toString();
                 String textUmur = editTextUmur.getText().toString();
 
-                if(!textTanggal.matches("")){
+                if(textTanggal.length() > 0){
                     tanggal = Integer.parseInt(editTextTanggal.getText().toString());
                 }
 
-                if(!textBulan.matches("")){
+                if(textBulan.length() > 0){
                     bulan = Integer.parseInt(editTextBulan.getText().toString());
                 }
 
-                if(!textTahun.matches("")){
+                if(textTahun.length() > 0){
                     tahun = Integer.parseInt(editTextTahun.getText().toString());
                 }
 
-                if(!textUmur.matches("")){
+                if(textUmur.length() > 0){
                     umur = Integer.parseInt(editTextUmur.getText().toString());
                 }
 
-                GlobalVariable.individu = new IndividuKeluarga();
-                GlobalVariable.individu.setNIK(nik);
-                GlobalVariable.individu.setNama(nama);
-                GlobalVariable.individu.setTanggal(tanggal);
-                GlobalVariable.individu.setBulan(bulan);
-                GlobalVariable.individu.setTahun(tahun);
-                GlobalVariable.individu.setUmur(umur);
+                GlobalVariable.Individu = new IndividuKeluarga();
+                GlobalVariable.Individu.setNIK(nik);
+                GlobalVariable.Individu.setNama(nama);
+                GlobalVariable.Individu.setTanggal(tanggal);
+                GlobalVariable.Individu.setBulan(bulan);
+                GlobalVariable.Individu.setTahun(tahun);
+                GlobalVariable.Individu.setUmur(umur);
 
                 Intent intent = new Intent(ActivityAddIndividu.this, ActivityFormTambahDataPendudukDua.class);
-                startActivity(intent);
+                startActivityForResult(intent, 1);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(resultCode == 1)
+        {
+            finish();
+        }
     }
 }

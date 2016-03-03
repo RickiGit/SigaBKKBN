@@ -10,34 +10,35 @@
         android:id="@+id/RelativeLayoutKeteranganKosong"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="List individu keluarga kosong"/>
+            android:text="Belum ada individu" />
     </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/LinearLayoutList"
         android:layout_width="match_parent"
-        android:visibility="gone"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
+
         <ListView
             android:id="@+id/ListViewIndividu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/ButtonNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/custom_style_button"
             android:text="LANJUT"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"/>
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </RelativeLayout>

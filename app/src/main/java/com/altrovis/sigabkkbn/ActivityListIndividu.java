@@ -28,36 +28,29 @@ public class ActivityListIndividu extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
-        actionBar.setTitle("Individu");
+        actionBar.setTitle("Kependudukan");
 
         inisialisasiLayout();
 
-        int jumlahList = GlobalVariable.listIndividu.size();
-        if(jumlahList != 0)
-        {
-            RelativeLayout relativeLayoutKeterangan = (RelativeLayout)findViewById(R.id.RelativeLayoutKeteranganKosong);
-            LinearLayout linearLayoutListIndividu = (LinearLayout)findViewById(R.id.LinearLayoutList);
+        adapter = new IndividuAdapter(this, R.layout.item_list_individu, GlobalVariable.ListIndividu);
+        listViewIndividu.setAdapter(adapter);
+
+        if (GlobalVariable.ListIndividu.size() > 0) {
+            RelativeLayout relativeLayoutKeterangan = (RelativeLayout) findViewById(R.id.RelativeLayoutKeteranganKosong);
+            LinearLayout linearLayoutListIndividu = (LinearLayout) findViewById(R.id.LinearLayoutList);
             relativeLayoutKeterangan.setVisibility(View.GONE);
             linearLayoutListIndividu.setVisibility(View.VISIBLE);
-            listViewIndividu = (ListView)findViewById(R.id.ListViewIndividu);
-
-            adapter = new IndividuAdapter(this, R.layout.item_list_individu, GlobalVariable.listIndividu);
-            adapter.notifyDataSetChanged();
-            listViewIndividu.setAdapter(adapter);
-
         }
 
         goToPageKeluargaBerencana();
-
     }
 
-    public void inisialisasiLayout()
-    {
-        buttonNext = (Button)findViewById(R.id.ButtonNext);
+    public void inisialisasiLayout() {
+        listViewIndividu = (ListView) findViewById(R.id.ListViewIndividu);
+        buttonNext = (Button) findViewById(R.id.ButtonNext);
     }
 
-    public void goToPageKeluargaBerencana()
-    {
+    public void goToPageKeluargaBerencana() {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,10 +74,24 @@ public class ActivityListIndividu extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.menuTambah) {
             Intent intent = new Intent(ActivityListIndividu.this, ActivityAddIndividu.class);
-            startActivity(intent);
+            startActivityForResult(intent, 1);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        adapter.notifyDataSetChanged();
+
+        if (GlobalVariable.ListIndividu.size() > 0) {
+            RelativeLayout relativeLayoutKeterangan = (RelativeLayout) findViewById(R.id.RelativeLayoutKeteranganKosong);
+            LinearLayout linearLayoutListIndividu = (LinearLayout) findViewById(R.id.LinearLayoutList);
+            relativeLayoutKeterangan.setVisibility(View.GONE);
+            linearLayoutListIndividu.setVisibility(View.VISIBLE);
+        }
+
     }
 }

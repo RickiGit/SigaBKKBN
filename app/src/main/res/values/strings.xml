@@ -23,13 +23,13 @@
     </string-array>
 
     <string-array name="rw">
-        <item>001.01</item>
-        <item>002.02</item>
+        <item>001</item>
+        <item>002</item>
     </string-array>
 
     <string-array name="rt">
-        <item>001.01</item>
-        <item>002.02</item>
+        <item>001</item>
+        <item>002</item>
     </string-array>
 
     <string-array name="hubungan_kk">

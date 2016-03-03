@@ -44,9 +44,9 @@ public class ActivityEditIndividu extends AppCompatActivity {
         individu = GlobalVariable.SELECTED_INDIVIDU;
         editTextNIK.setText(individu.getNIK());
         editTextNama.setText(individu.getNama());
-        editTextTanggal.setText(individu.getTanggal());
-        editTextBulan.setText(individu.getBulan());
-        editTextTanggal.setText(individu.getTahun());
-        editTextUmur.setText(individu.getUmur());
+        editTextTanggal.setText(individu.getTanggal() + "");
+        editTextBulan.setText(individu.getBulan() + "");
+        editTextTanggal.setText(individu.getTahun() + "");
+        editTextUmur.setText(individu.getUmur() + "");
     }
 }

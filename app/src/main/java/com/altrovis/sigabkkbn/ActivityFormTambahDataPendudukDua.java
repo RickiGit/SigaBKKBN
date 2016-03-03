@@ -1,6 +1,5 @@
 package com.altrovis.sigabkkbn;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,15 +23,14 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
-        actionBar.setTitle("Kependudukan");
+        actionBar.setTitle("Individu (2/2)");
 
         inisialisasiLayout();
         goToListIndividu();
         setSpinnerLayout();
     }
 
-    public void inisialisasiLayout()
-    {
+    public void inisialisasiLayout() {
         buttonSave = (Button) findViewById(R.id.ButtonSave);
         spinnerHubunganKK = (Spinner) findViewById(R.id.SpinnerHubunganKK);
         spinnerJK = (Spinner) findViewById(R.id.SpinnerJenisKelamin);
@@ -43,8 +41,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerJKN = (Spinner) findViewById(R.id.SpinnerJKN);
     }
 
-    public void setSpinnerLayout()
-    {
+    public void setSpinnerLayout() {
         // Set List Hubungan KK
         String[] listHubunganKK = getResources().getStringArray(R.array.hubungan_kk);
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listHubunganKK);
@@ -54,7 +51,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerHubunganKK.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.individu.setHubunganDenganKK(position);
+                GlobalVariable.Individu.setHubunganDenganKK(position);
             }
 
             @Override
@@ -72,7 +69,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerJK.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.individu.setJenisKelamin(position);
+                GlobalVariable.Individu.setJenisKelamin(position);
             }
 
             @Override
@@ -90,7 +87,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerAgama.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.individu.setAgama(position);
+                GlobalVariable.Individu.setAgama(position);
             }
 
             @Override
@@ -108,7 +105,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerPendidikan.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.individu.setPendidikan(position);
+                GlobalVariable.Individu.setPendidikan(position);
             }
 
             @Override
@@ -126,7 +123,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerPekerjaan.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.individu.setPekerjaan(position);
+                GlobalVariable.Individu.setPekerjaan(position);
             }
 
             @Override
@@ -144,7 +141,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerStatusKawin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.individu.setStatusKawin(position);
+                GlobalVariable.Individu.setStatusKawin(position);
             }
 
             @Override
@@ -162,7 +159,7 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         spinnerJKN.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.individu.setJKN(position);
+                GlobalVariable.Individu.setJKN(position);
             }
 
             @Override
@@ -172,16 +169,16 @@ public class ActivityFormTambahDataPendudukDua extends AppCompatActivity {
         });
     }
 
-    public void goToListIndividu()
-    {
+    public void goToListIndividu() {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                GlobalVariable.ListIndividu.add(GlobalVariable.Individu);
 
-                GlobalVariable.listIndividu.add(GlobalVariable.individu);
+                GlobalVariable.Individu = null;
 
-                Intent intent = new Intent(ActivityFormTambahDataPendudukDua.this, ActivityListIndividu.class);
-                startActivity(intent);
+                setResult(1);
+
                 finish();
             }
         });
