@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Faskes KB/Jaringan/Jejaring"
+                android:text="I. Kode Faskes KB/Jaringan/Jejaring"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:textStyle="bold"
@@ -28,36 +28,32 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Provinsi"
+                android:text="Provinsi"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
-            <EditText
-                android:id="@+id/EditTextKodeProvisniFaskes"
+            <Spinner
+                android:id="@+id/SpinnerKodeProvinsiFaskes"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"
-                android:inputType="number"/>
+                android:entries="@array/provinsi"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Kabupate/Kota"
+                android:text="Kabupaten/Kota"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
-            <EditText
-                android:id="@+id/EditTextKodeKabupatenFaskes"
+            <Spinner
+                android:id="@+id/SpinnerKodeKabupatenFaskes"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"
-                android:inputType="number"/>
+                android:entries="@array/kota"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -96,7 +92,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Keluarga Indonesia"
+                android:text="II. Kode Keluarga Indonesia"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:textStyle="bold"
@@ -106,70 +102,62 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Provinsi"
+                android:text="Provinsi"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
-            <EditText
-                android:id="@+id/EditTextKodeProvisni"
+            <Spinner
+                android:id="@+id/SpinnerKodeProvinsi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"
-                android:inputType="number"/>
+                android:entries="@array/provinsi"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Kabupate/Kota"
+                android:text="Kabupaten/Kota"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
-            <EditText
-                android:id="@+id/EditTextKodeKabupaten"
+            <Spinner
+                android:id="@+id/SpinnerKodeKabupaten"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"
-                android:inputType="number"/>
+                android:entries="@array/kota"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Kecamatan"
+                android:text="Kecamatan"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
-            <EditText
-                android:id="@+id/EditTextKodeKecamatan"
+            <Spinner
+                android:id="@+id/SpinnerKodeKecamatan"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"
-                android:inputType="number"/>
+                android:entries="@array/kecamatan"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kode Kelurahan/Desa"
+                android:text="Kelurahan/Desa"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
-            <EditText
-                android:id="@+id/EditTextKodeKelurahan"
+            <Spinner
+                android:id="@+id/SpinnerKodeKelurahan"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"
-                android:inputType="number"/>
+                android:entries="@array/desa"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
                 android:layout_width="match_parent"

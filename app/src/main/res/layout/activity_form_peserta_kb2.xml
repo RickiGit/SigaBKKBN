@@ -19,7 +19,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama Peserta KB"
+                android:text="III. Nama Peserta KB"
+                android:textStyle="bold"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <EditText
@@ -28,18 +29,28 @@
                 android:layout_height="40dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:singleLine="true"
                 android:background="@drawable/custom_form_input"
                 android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="IV. Tanggal Lahir/Umur Istri"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Tanggal Lahir Istri"
+                android:layout_marginLeft="15dp"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:orientation="horizontal">
                 <EditText
                     android:id="@+id/EditTextTanggal"
@@ -85,13 +96,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Umur Istri"
+                android:layout_marginLeft="15dp"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <EditText
                 android:id="@+id/EditTextUmur"
-                android:layout_width="match_parent"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:paddingLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:enabled="true"
                 android:inputType="number"
                 android:background="@drawable/custom_form_input"
@@ -100,7 +113,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama Suami/Istri"
+                android:text="V. Nama Suami/Istri"
+                android:textStyle="bold"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <EditText
@@ -109,19 +123,29 @@
                 android:layout_height="40dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:singleLine="true"
                 android:background="@drawable/custom_form_input"
                 android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="VI. Pendidikan Suami dan Istri"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Pendidikan Suami"
                 android:textSize="15dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginBottom="10dp"/>
             <Spinner
                 android:id="@+id/SpinnerPendidikanSuami"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
                 android:entries="@array/pendidikan"
                 android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
@@ -131,11 +155,13 @@
                 android:layout_height="wrap_content"
                 android:text="Pendidikan Istri"
                 android:textSize="15dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginBottom="10dp"/>
             <Spinner
                 android:id="@+id/SpinnerPendidikanIstri"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
                 android:entries="@array/pendidikan"
                 android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
@@ -143,7 +169,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Alamat Peserta KB"
+                android:text="VII. Alamat Peserta KB"
+                android:textStyle="bold"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <EditText
@@ -152,33 +179,44 @@
                 android:layout_height="40dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:singleLine="true"
                 android:background="@drawable/custom_form_input"
                 android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="VIII. Pekerjaan Suami dan Istri"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Pekerjaan Suami"
+                android:layout_marginLeft="15dp"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <Spinner
                 android:id="@+id/SpinnerPekerjaanSuami"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
                 android:entries="@array/pekerjaan"
                 android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Pekerjaan Istri"
+                android:layout_marginLeft="15dp"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <Spinner
                 android:id="@+id/SpinnerPekerjaanIstri"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
                 android:entries="@array/pekerjaan"
                 android:background="@drawable/custom_spinner"
                 android:layout_marginBottom="15dp"/>
@@ -186,7 +224,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Penggunaan Asuransi"
+                android:text="IX. Penggunaan Asuransi"
+                android:textStyle="bold"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
             <Spinner
