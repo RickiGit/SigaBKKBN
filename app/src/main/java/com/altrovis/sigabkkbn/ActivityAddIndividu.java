@@ -71,13 +71,13 @@ public class ActivityAddIndividu extends AppCompatActivity {
                     umur = Integer.parseInt(editTextUmur.getText().toString());
                 }
 
-                GlobalVariable.Individu = new IndividuKeluarga();
-                GlobalVariable.Individu.setNIK(nik);
-                GlobalVariable.Individu.setNama(nama);
-                GlobalVariable.Individu.setTanggal(tanggal);
-                GlobalVariable.Individu.setBulan(bulan);
-                GlobalVariable.Individu.setTahun(tahun);
-                GlobalVariable.Individu.setUmur(umur);
+                GlobalVariable.NEW_INDIVIDU = new IndividuKeluarga();
+                GlobalVariable.NEW_INDIVIDU.setNIK(nik);
+                GlobalVariable.NEW_INDIVIDU.setNama(nama);
+                GlobalVariable.NEW_INDIVIDU.setTanggal(tanggal);
+                GlobalVariable.NEW_INDIVIDU.setBulan(bulan);
+                GlobalVariable.NEW_INDIVIDU.setTahun(tahun);
+                GlobalVariable.NEW_INDIVIDU.setUmur(umur);
 
                 Intent intent = new Intent(ActivityAddIndividu.this, ActivityFormTambahDataPendudukDua.class);
                 startActivityForResult(intent, 1);

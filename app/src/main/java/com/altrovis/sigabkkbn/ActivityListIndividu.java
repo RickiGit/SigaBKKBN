@@ -13,10 +13,12 @@ import android.widget.RelativeLayout;
 
 import com.altrovis.sigabkkbn.Bussines.DataKependudukan.IndividuAdapter;
 import com.altrovis.sigabkkbn.Entities.GlobalVariable;
+import com.altrovis.sigabkkbn.Entities.IndividuKeluarga;
+
+import java.util.ArrayList;
 
 public class ActivityListIndividu extends AppCompatActivity {
 
-    private IndividuAdapter adapter;
     ListView listViewIndividu;
     Button buttonNext;
 
@@ -32,15 +34,8 @@ public class ActivityListIndividu extends AppCompatActivity {
 
         inisialisasiLayout();
 
-        adapter = new IndividuAdapter(this, R.layout.item_list_individu, GlobalVariable.ListIndividu);
-        listViewIndividu.setAdapter(adapter);
-
-        if (GlobalVariable.ListIndividu.size() > 0) {
-            RelativeLayout relativeLayoutKeterangan = (RelativeLayout) findViewById(R.id.RelativeLayoutKeteranganKosong);
-            LinearLayout linearLayoutListIndividu = (LinearLayout) findViewById(R.id.LinearLayoutList);
-            relativeLayoutKeterangan.setVisibility(View.GONE);
-            linearLayoutListIndividu.setVisibility(View.VISIBLE);
-        }
+        GlobalVariable.INDIVIDU_ADAPTER = new IndividuAdapter(this, R.layout.item_list_individu, new ArrayList<IndividuKeluarga>());
+        listViewIndividu.setAdapter(GlobalVariable.INDIVIDU_ADAPTER);
 
         goToPageKeluargaBerencana();
     }
@@ -84,14 +79,13 @@ public class ActivityListIndividu extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        adapter.notifyDataSetChanged();
+        GlobalVariable.INDIVIDU_ADAPTER.notifyDataSetChanged();
 
-        if (GlobalVariable.ListIndividu.size() > 0) {
+        if (GlobalVariable.INDIVIDU_ADAPTER.getCount() > 0) {
             RelativeLayout relativeLayoutKeterangan = (RelativeLayout) findViewById(R.id.RelativeLayoutKeteranganKosong);
             LinearLayout linearLayoutListIndividu = (LinearLayout) findViewById(R.id.LinearLayoutList);
             relativeLayoutKeterangan.setVisibility(View.GONE);
             linearLayoutListIndividu.setVisibility(View.VISIBLE);
         }
-
     }
 }
