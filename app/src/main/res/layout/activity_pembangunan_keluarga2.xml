@@ -143,7 +143,8 @@
                 android:paddingBottom="5dp">
                 <EditText
                     android:layout_width="80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/custom_form_input"
                     android:text=""
                     android:gravity="right"
                     android:textAlignment="center"
@@ -171,7 +172,8 @@
                 android:paddingBottom="5dp">
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/custom_form_input"
                     android:textAlignment="center"
                     android:gravity="right"
                     android:inputType="number"

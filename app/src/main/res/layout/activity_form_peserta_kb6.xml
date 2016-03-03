@@ -187,7 +187,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="goToMenuAwal"
-                android:text="Lanjut"
+                android:text="SIMPAN"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/custom_style_button"/>
 

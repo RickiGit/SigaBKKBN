@@ -73,6 +73,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="9. Sebelum dilakukan pemasangan IUD atau Tubektomi dilakukan pemeriksaan dalam :"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
@@ -122,6 +123,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="11. Pemeriksaan Tambahan (khusus untuk calon Vasektomi dan Tubektomi)"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
@@ -188,6 +190,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="12. Alat/obat/cara kontrasepsi yang boleh dipergunakan"
                 android:textSize="15dp"
                 android:layout_marginBottom="10dp"/>
