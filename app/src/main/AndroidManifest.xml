@@ -65,14 +65,16 @@
             android:name=".ActivityFormPesertaKB6"
             android:parentActivityName=".ActivityFormPesertaKB5"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".ActivityEditIndividu" />
+        <activity android:name=".ActivityEditIndividu"
+            android:parentActivityName=".ActivityListIndividu"/>
         <activity
             android:name=".ActivityMenuPesertaKB"
             android:parentActivityName=".ActivityMain" />
         <activity
             android:name=".ActivityTentang"
             android:parentActivityName=".ActivityTentang" />
-        <activity android:name=".ActivityEditDataPenduduk"></activity>
+        <activity android:name=".ActivityEditDataPenduduk"
+            android:parentActivityName=".ActivityEditIndividu"></activity>
     </application>
 
 </manifest>
