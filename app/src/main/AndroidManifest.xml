@@ -69,8 +69,10 @@
         <activity
             android:name=".ActivityMenuPesertaKB"
             android:parentActivityName=".ActivityMain" />
-        <activity android:name=".ActivityTentang"
-            android:parentActivityName=".ActivityTentang"></activity>
+        <activity
+            android:name=".ActivityTentang"
+            android:parentActivityName=".ActivityTentang" />
+        <activity android:name=".ActivityEditDataPenduduk"></activity>
     </application>
 
 </manifest>

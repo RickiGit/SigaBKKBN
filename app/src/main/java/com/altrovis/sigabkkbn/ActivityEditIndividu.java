@@ -1,7 +1,8 @@
 package com.altrovis.sigabkkbn;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -48,5 +49,11 @@ public class ActivityEditIndividu extends AppCompatActivity {
         editTextBulan.setText(individu.getBulan() + "");
         editTextTanggal.setText(individu.getTahun() + "");
         editTextUmur.setText(individu.getUmur() + "");
+    }
+
+    public void goToPageEditDataPenduduk()
+    {
+        Intent intent = new Intent(this, ActivityEditDataPenduduk.class);
+        startActivity(intent);
     }
 }

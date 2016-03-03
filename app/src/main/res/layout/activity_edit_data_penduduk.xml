@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_form"
+    tools:context=".ActivityEditDataPenduduk">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:paddingBottom="100dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hubungan Dengan KK"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerHubunganKK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="10dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="10dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerAgama"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="10dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="10dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pekerjaan"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerPekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="10dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Kawin"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerStatusKawin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="10dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JKN"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/SpinnerJKN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"
+                android:layout_marginBottom="15dp"></Spinner>
+
+            <Button
+                android:id="@+id/ButtonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LANJUT"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_style_button"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
