@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.altrovis.sigabkkbn.Entities.GlobalVariable;
+
 public class ActivityFormTambahDataPendudukSatu extends AppCompatActivity {
 
     Button buttonNext;
@@ -87,6 +89,5 @@ public class ActivityFormTambahDataPendudukSatu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

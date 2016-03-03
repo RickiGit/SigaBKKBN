@@ -30,19 +30,17 @@ public class ActivityAddIndividu extends AppCompatActivity {
         addIndividu();
     }
 
-    public void inisialisasiLayout()
-    {
-        editTextNIK = (EditText)findViewById(R.id.EditTextNIK);
-        editTextNama = (EditText)findViewById(R.id.EditTextNama);
-        editTextTanggal = (EditText)findViewById(R.id.EditTextTanggal);
-        editTextBulan = (EditText)findViewById(R.id.EditTextBulan);
-        editTextTahun = (EditText)findViewById(R.id.EditTextTahun);
-        editTextUmur = (EditText)findViewById(R.id.EditTextUmur);
-        buttonSave = (Button)findViewById(R.id.ButtonSave);
+    public void inisialisasiLayout() {
+        editTextNIK = (EditText) findViewById(R.id.EditTextNIK);
+        editTextNama = (EditText) findViewById(R.id.EditTextNama);
+        editTextTanggal = (EditText) findViewById(R.id.EditTextTanggal);
+        editTextBulan = (EditText) findViewById(R.id.EditTextBulan);
+        editTextTahun = (EditText) findViewById(R.id.EditTextTahun);
+        editTextUmur = (EditText) findViewById(R.id.EditTextUmur);
+        buttonSave = (Button) findViewById(R.id.ButtonSave);
     }
 
-    public void addIndividu()
-    {
+    public void addIndividu() {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,19 +53,19 @@ public class ActivityAddIndividu extends AppCompatActivity {
                 String textTahun = editTextTahun.getText().toString();
                 String textUmur = editTextUmur.getText().toString();
 
-                if(textTanggal.length() > 0){
+                if (textTanggal.length() > 0) {
                     tanggal = Integer.parseInt(editTextTanggal.getText().toString());
                 }
 
-                if(textBulan.length() > 0){
+                if (textBulan.length() > 0) {
                     bulan = Integer.parseInt(editTextBulan.getText().toString());
                 }
 
-                if(textTahun.length() > 0){
+                if (textTahun.length() > 0) {
                     tahun = Integer.parseInt(editTextTahun.getText().toString());
                 }
 
-                if(textUmur.length() > 0){
+                if (textUmur.length() > 0) {
                     umur = Integer.parseInt(editTextUmur.getText().toString());
                 }
 
@@ -87,8 +85,9 @@ public class ActivityAddIndividu extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode == 1)
-        {
+        setResult(resultCode);
+
+        if (resultCode == 1) {
             finish();
         }
     }
