@@ -89,11 +89,17 @@ public class ActivityListIndividu extends AppCompatActivity {
 
     public void checkButtonLanjutVisibility()
     {
+        RelativeLayout relativeLayoutKeterangan = (RelativeLayout) findViewById(R.id.RelativeLayoutKeteranganKosong);
+        LinearLayout linearLayoutListIndividu = (LinearLayout) findViewById(R.id.LinearLayoutList);
+
         if (GlobalVariable.INDIVIDU_ADAPTER.getCount() > 0) {
-            RelativeLayout relativeLayoutKeterangan = (RelativeLayout) findViewById(R.id.RelativeLayoutKeteranganKosong);
-            LinearLayout linearLayoutListIndividu = (LinearLayout) findViewById(R.id.LinearLayoutList);
             relativeLayoutKeterangan.setVisibility(View.GONE);
             linearLayoutListIndividu.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            relativeLayoutKeterangan.setVisibility(View.VISIBLE);
+            linearLayoutListIndividu.setVisibility(View.GONE);
         }
     }
 }
