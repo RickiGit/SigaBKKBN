@@ -20,7 +20,7 @@ public class ActivityFormPesertaKB4 extends AppCompatActivity {
     }
 
     public void goToFormPesertaKB5(View ev) {
-        Intent intent = new Intent(this, ActivityMain.class);
+        Intent intent = new Intent(this, ActivityFormPesertaKB5.class);
         startActivity(intent);
     }
 
