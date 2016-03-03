@@ -18,6 +18,7 @@
                 android:layout_height="wrap_content"
                 android:text="XV. Alat/obat/cara kontrasepsi yang dipilih "
                 android:textSize="15dp"
+                android:textStyle="bold"
                 android:layout_marginBottom="10dp"/>
             <Spinner
                 android:id="@+id/SpinnerKeadaanUmum"
@@ -31,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:text="XVI. Tanggal dilayani"
                 android:textSize="15dp"
+                android:textStyle="bold"
                 android:layout_marginBottom="10dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:text="XVII. Tanggal kunjungan ulang"
                 android:textSize="15dp"
+                android:textStyle="bold"
                 android:layout_marginBottom="10dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -131,6 +134,7 @@
                 android:layout_height="wrap_content"
                 android:text="XVIII. Tanggal dicabut (khusus implan / IUD)"
                 android:textSize="15dp"
+                android:textStyle="bold"
                 android:layout_marginBottom="10dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
