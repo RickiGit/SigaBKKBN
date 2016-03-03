@@ -79,8 +79,16 @@ public class ActivityListIndividu extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        GlobalVariable.INDIVIDU_ADAPTER.notifyDataSetChanged();
+        if(resultCode == 1)
+        {
+            GlobalVariable.INDIVIDU_ADAPTER.notifyDataSetChanged();
 
+            checkButtonLanjutVisibility();
+        }
+    }
+
+    public void checkButtonLanjutVisibility()
+    {
         if (GlobalVariable.INDIVIDU_ADAPTER.getCount() > 0) {
             RelativeLayout relativeLayoutKeterangan = (RelativeLayout) findViewById(R.id.RelativeLayoutKeteranganKosong);
             LinearLayout linearLayoutListIndividu = (LinearLayout) findViewById(R.id.LinearLayoutList);
