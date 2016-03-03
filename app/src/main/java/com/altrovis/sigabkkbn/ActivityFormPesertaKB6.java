@@ -1,6 +1,8 @@
 package com.altrovis.sigabkkbn;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -20,9 +22,27 @@ public class ActivityFormPesertaKB6 extends AppCompatActivity {
     }
 
     public void goToMenuAwal(View ev) {
-        setResult(1);
+        final ProgressDialog progress = new ProgressDialog(ev.getContext());
+        progress.setMessage("Mengirim data...");
+        progress.setCancelable(false);
+        progress.setIndeterminate(true);
+        progress.show();
 
-        finish();
+        Runnable progressRunnable = new Runnable() {
+
+            @Override
+            public void run() {
+
+                progress.cancel();
+
+                setResult(1);
+
+                finish();
+            }
+        };
+
+        Handler pdCanceller = new Handler();
+        pdCanceller.postDelayed(progressRunnable, 2000);
     }
 
     @Override
