@@ -16,65 +16,41 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityMain" />
-        <activity
-            android:name=".ActivityDataKeluarga"
-            android:parentActivityName=".ActivityMain" />
+        <activity android:name=".ActivityDataKeluarga" />
         <activity
             android:name=".ActivityFormTambahDataPendudukSatu"
-            android:parentActivityName=".ActivityDataKeluarga"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ActivityFormTambahDataPendudukDua"
-            android:parentActivityName=".ActivityListIndividu"
             android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".ActivityPencarian"
-            android:parentActivityName=".ActivityMain" />
-        <activity
-            android:name=".ActivityListIndividu"
-            android:parentActivityName=".ActivityFormTambahDataPendudukSatu" />
+        <activity android:name=".ActivityPencarian" />
+        <activity android:name=".ActivityListIndividu" />
         <activity
             android:name=".ActivityAddIndividu"
-            android:parentActivityName=".ActivityListIndividu"
             android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".ActivityKeluargaBerencana"
-            android:parentActivityName=".ActivityListIndividu" />
+        <activity android:name=".ActivityKeluargaBerencana" />
         <activity android:name=".ActivityPembangunanKeluarga1" />
         <activity android:name=".ActivityPembangunanKeluarga2" />
-        <activity
-            android:name=".ActivityFormPesertaKB1"
-            android:parentActivityName=".ActivityMenuPesertaKB" />
+        <activity android:name=".ActivityFormPesertaKB1" />
         <activity
             android:name=".ActivityFormPesertaKB2"
-            android:parentActivityName=".ActivityFormPesertaKB1"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ActivityFormPesertaKB3"
-            android:parentActivityName=".ActivityFormPesertaKB2"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ActivityFormPesertaKB4"
-            android:parentActivityName=".ActivityFormPesertaKB3"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ActivityFormPesertaKB5"
-            android:parentActivityName=".ActivityFormPesertaKB4"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ActivityFormPesertaKB6"
-            android:parentActivityName=".ActivityFormPesertaKB5"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".ActivityEditIndividu"
-            android:parentActivityName=".ActivityListIndividu"/>
-        <activity
-            android:name=".ActivityMenuPesertaKB"
-            android:parentActivityName=".ActivityMain" />
-        <activity
-            android:name=".ActivityTentang"
-            android:parentActivityName=".ActivityTentang" />
-        <activity android:name=".ActivityEditDataPenduduk"
-            android:parentActivityName=".ActivityEditIndividu"></activity>
+        <activity android:name=".ActivityEditIndividu" />
+        <activity android:name=".ActivityMenuPesertaKB" />
+        <activity android:name=".ActivityTentang" />
+        <activity android:name=".ActivityEditDataPenduduk"></activity>
     </application>
 
 </manifest>
