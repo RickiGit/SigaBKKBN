@@ -110,7 +110,7 @@
                 android:id="@+id/ButtonSave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LANJUT"
+                android:text="SIMPAN"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/custom_style_button"/>
         </LinearLayout>
