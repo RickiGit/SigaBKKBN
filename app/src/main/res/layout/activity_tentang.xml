@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Aplikasi Pendataan Keluarga (PK) 2015 digunakan untuk melakukan perekaman dan pengolahan Formulir Pendataan Data Keluarga menjadi Basis Data Keluarga. Formulir PK 2015 mencatat secara lengkap data keluarga yang meliputi informasi tentang kependudukan, keluarga berencana dan keluarga sejahtera serta tahapan keluarga sejahtera melalui kegiatan Pendataan Keluarga/Pemutakhiran Data Keluarga di seluruh tingkatan wilayah di Indonesia."
+                android:text="Aplikasi SIGA digunakan untuk melakukan perekaman dan pengolahan Formulir Pendataan Data Keluarga menjadi Basis Data Keluarga. Formulir PK 2015 mencatat secara lengkap data keluarga yang meliputi informasi tentang kependudukan, keluarga berencana dan keluarga sejahtera serta tahapan keluarga sejahtera melalui kegiatan Pendataan Keluarga/Pemutakhiran Data Keluarga di seluruh tingkatan wilayah di Indonesia."
                 android:textAlignment="center" />
         </LinearLayout>
     </ScrollView>

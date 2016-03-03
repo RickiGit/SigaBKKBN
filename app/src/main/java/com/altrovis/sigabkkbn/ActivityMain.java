@@ -22,7 +22,7 @@ public class ActivityMain extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("PK BKKBN");
+        actionBar.setTitle("SIGA");
 
         GridView gridView = (GridView) findViewById(R.id.GridViewMenu);
         final ArrayList<ItemMenu> listOfMenu = new ArrayList<ItemMenu>();
