@@ -50,7 +50,7 @@ public class ActivityListIndividu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityListIndividu.this, ActivityKeluargaBerencana.class);
-                startActivity(intent);
+                startActivityForResult(intent, 2);
             }
         });
     }
@@ -72,6 +72,10 @@ public class ActivityListIndividu extends AppCompatActivity {
             startActivityForResult(intent, 1);
             return true;
         }
+        else if (id == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -79,10 +83,21 @@ public class ActivityListIndividu extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (resultCode == 1) {
-            GlobalVariable.INDIVIDU_ADAPTER.notifyDataSetChanged();
+        if(requestCode != 2) {
+            if (resultCode == 1) {
+                GlobalVariable.INDIVIDU_ADAPTER.notifyDataSetChanged();
 
-            checkButtonLanjutVisibility();
+                checkButtonLanjutVisibility();
+            }
+        }
+        else
+        {
+            if(resultCode == 1)
+            {
+                setResult(1);
+
+                finish();
+            }
         }
     }
 

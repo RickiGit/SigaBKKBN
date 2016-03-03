@@ -4,6 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.altrovis.sigabkkbn.ActivityAddIndividu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -104,7 +111,7 @@
             android:enabled="true"
             android:inputType="number"
             android:background="@drawable/custom_form_input"
-            android:layout_marginBottom="15dp"/>
+            android:layout_marginBottom="35dp"/>
 
         <Button
             android:id="@+id/ButtonSave"

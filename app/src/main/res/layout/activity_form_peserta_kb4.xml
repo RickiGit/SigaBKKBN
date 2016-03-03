@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_form"
     tools:context="com.altrovis.sigabkkbn.ActivityFormPesertaKB4">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,340 +19,379 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-            android:paddingBottom="100dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:text="XIV. Penapisan (Skrining) untuk menentukan alat kontrasepsi yang dapat digunakan calon peserta KB"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="20dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="1. Haid terakhir tanggal"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="15dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <EditText
                     android:id="@+id/EditTextTanggal"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:inputType="number"
-                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:background="@drawable/custom_form_input"
-                    android:layout_marginBottom="10dp"/>
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
                     android:text="-"
-                    android:textSize="22dp"
-                    android:layout_marginRight="5dp"/>
+                    android:textSize="22dp" />
+
                 <EditText
                     android:id="@+id/EditTextBulan"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:inputType="number"
-                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:background="@drawable/custom_form_input"
-                    android:layout_marginBottom="10dp"/>
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
                     android:text="-"
-                    android:textSize="22dp"
-                    android:layout_marginRight="5dp"/>
+                    android:textSize="22dp" />
+
                 <EditText
                     android:id="@+id/EditTextTahun"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:inputType="number"
-                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:background="@drawable/custom_form_input"
-                    android:layout_marginBottom="10dp"/>
+                    android:inputType="number"
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="2. Hamil/Diduga Hamil"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerHamil"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/YaTidak"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/YaTidak" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="3. Jumlah GPA"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="15dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="Gravida (Kehamilan)"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
-                    android:textSize="15dp"/>
+                    android:text="Gravida (Kehamilan)"
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
+                    android:inputType="number"
                     android:text=""
                     android:textAlignment="center"
-                    android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:text="kali"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="Partus (Persalinan)"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
-                    android:textSize="15dp"/>
+                    android:text="Partus (Persalinan)"
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:text=""
                     android:gravity="right"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:text=""
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
                     android:text="kali"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="Abortus (Keguguran)"
-                    android:layout_marginLeft="15dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="15dp"/>
+                    android:layout_marginLeft="15dp"
+                    android:text="Abortus (Keguguran)"
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
+                    android:inputType="number"
                     android:text=""
                     android:textAlignment="center"
-                    android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
                     android:text="kali"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="4. Menyusui"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerMenyusui"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/YaTidak"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/YaTidak" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="5. Riwayat Penyakit Sebelumnya"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="15dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a. Sakit kuning"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="a. Sakit kuning" />
+
             <Spinner
                 android:id="@+id/SpinnerSakitKuning"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
-                android:entries="@array/YaTidak"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/YaTidak" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="b. Pendarahan pervaginam yang tidak diketahui sebabnya"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="b. Pendarahan pervaginam yang tidak diketahui sebabnya" />
+
             <Spinner
                 android:id="@+id/SpinnerPendarahanPervaginam"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
-                android:entries="@array/YaTidak"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/YaTidak" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="c. Keputihan yang lama"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="c. Keputihan yang lama" />
+
             <Spinner
                 android:id="@+id/SpinnerKeputihan"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
-                android:entries="@array/YaTidak"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/YaTidak" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="d.Tumor"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="d.Tumor" />
+
             <Spinner
                 android:id="@+id/SpinnerTumor"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
-                android:entries="@array/YaTidak"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/YaTidak" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
                     android:text="Payudara"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text=""
+                    android:background="@drawable/custom_form_input"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:singleLine="true"
-                    android:background="@drawable/custom_form_input"
-                    android:textSize="15dp"/>
+                    android:text=""
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
                     android:text="Rahim"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text=""
+                    android:background="@drawable/custom_form_input"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:singleLine="true"
-                    android:background="@drawable/custom_form_input"
-                    android:textSize="15dp"/>
+                    android:text=""
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
-                    android:text="Indung Telur"
                     android:layout_marginLeft="15dp"
-                    android:textSize="15dp"/>
+                    android:text="Indung Telur"
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text=""
+                    android:background="@drawable/custom_form_input"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:singleLine="true"
-                    android:background="@drawable/custom_form_input"
-                    android:textSize="15dp"/>
+                    android:text=""
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
                 android:text="- Bila semua jawaban TIDAK, dapat diberikan salah satu dari cara KB (kecuali IUD dan Tubektomi)"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:textSize="15dp"/>
+                android:textSize="15dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="- Bila salah satu jawaban YA, rujuk ke dokter."
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
-                android:textSize="15dp"/>
+                android:text="- Bila salah satu jawaban YA, rujuk ke dokter."
+                android:textSize="15dp" />
 
             <Button
                 android:id="@+id/ButtonNext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lanjut"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/custom_style_button"
                 android:onClick="goToFormPesertaKB5"
-                android:layout_marginTop="20dp"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/custom_style_button"/>
+                android:text="Lanjut"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </ScrollView>

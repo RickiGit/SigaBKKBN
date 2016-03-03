@@ -4,114 +4,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.altrovis.sigabkkbn.ActivityEditIndividu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="100dp"
-        android:padding="25dp">
+        android:padding="25dp"
+        android:paddingBottom="100dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="NIK"
-            android:textSize="15dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="15dp" />
+
         <EditText
             android:id="@+id/EditTextNIK"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:inputType="number"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/custom_form_input"
-            android:layout_marginBottom="10dp"/>
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="Nama"
-            android:textSize="15dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="15dp" />
+
         <EditText
             android:id="@+id/EditTextNama"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_form_input"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:singleLine="true"
-            android:background="@drawable/custom_form_input"
-            android:layout_marginBottom="10dp"/>
+            android:singleLine="true" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="Tanggal Lahir"
-            android:textSize="15dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="15dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/EditTextTanggal"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
-                android:inputType="number"
-                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"/>
+                android:inputType="number"
+                android:textAlignment="center" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:text="-"
-                android:textSize="22dp"
-                android:layout_marginRight="5dp"/>
+                android:textSize="22dp" />
+
             <EditText
                 android:id="@+id/EditTextBulan"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
-                android:inputType="number"
-                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"/>
+                android:inputType="number"
+                android:textAlignment="center" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:text="-"
-                android:textSize="22dp"
-                android:layout_marginRight="5dp"/>
+                android:textSize="22dp" />
+
             <EditText
                 android:id="@+id/EditTextTahun"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
-                android:inputType="number"
-                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"/>
+                android:inputType="number"
+                android:textAlignment="center" />
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="Umur"
-            android:textSize="15dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="15dp" />
+
         <EditText
             android:id="@+id/EditTextUmur"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:paddingLeft="10dp"
-            android:enabled="true"
-            android:inputType="number"
+            android:layout_marginBottom="35dp"
             android:background="@drawable/custom_form_input"
-            android:layout_marginBottom="15dp"/>
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
 
         <Button
             android:id="@+id/ButtonSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/custom_style_button"
             android:text="LANJUT"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/custom_style_button"/>
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </RelativeLayout>

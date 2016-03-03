@@ -25,7 +25,7 @@ public class ActivityEditIndividu extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(false);
-        actionBar.setTitle("Edit Individu");
+        actionBar.setTitle("Ubah Individu");
 
         inisialisasiLayout();
         setValueForm();
@@ -50,7 +50,7 @@ public class ActivityEditIndividu extends AppCompatActivity {
         editTextNama.setText(individu.getNama());
         editTextTanggal.setText(individu.getTanggal() + "");
         editTextBulan.setText(individu.getBulan() + "");
-        editTextTanggal.setText(individu.getTahun() + "");
+        editTextTahun.setText(individu.getTahun() + "");
         editTextUmur.setText(individu.getUmur() + "");
     }
 

@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_form"
     tools:context="com.altrovis.sigabkkbn.ActivityFormPesertaKB3">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,157 +19,172 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-            android:paddingBottom="100dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:text="X. Jumlah anak hidup"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Laki-laki"
                     android:layout_gravity="center_vertical"
-                    android:textSize="15dp"/>
+                    android:text="Laki-laki"
+                    android:textSize="15dp" />
+
                 <EditText
                     android:id="@+id/EditTextJumlahAnakLakiLaki"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:text=""
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:text="Orang"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Perempuan"
                     android:layout_gravity="center_vertical"
-                    android:textSize="15dp"/>
+                    android:text="Perempuan"
+                    android:textSize="15dp" />
+
                 <EditText
                     android:id="@+id/EditTextJumlahAnakPerempuan"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:text="Orang"
-                    android:layout_gravity="center_vertical"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="XI. Umur anak yang masih hidup"
                 android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <EditText
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:text="Tahun"
-                    android:layout_gravity="center_vertical"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:text="Bulan"
-                    android:layout_gravity="center_vertical"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="XII. Status Peserta KB"
                 android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerStatusPersertaKB"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/StatusPesertaKB"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/StatusPesertaKB" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="XIII. Alat/Obat/Cara KB terakhir"
                 android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerAlatKBTerakhir"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/AlatKBTerakhir"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/AlatKBTerakhir" />
 
 
             <Button
                 android:id="@+id/ButtonNext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lanjut"
-                android:onClick="goToFormPesertaKB4"
+                android:layout_marginBottom="50dp"
                 android:layout_marginTop="20dp"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/custom_style_button"/>
+                android:background="@drawable/custom_style_button"
+                android:onClick="goToFormPesertaKB4"
+                android:text="Lanjut"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </ScrollView>

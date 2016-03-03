@@ -15,13 +15,13 @@ public class ActivityFormPesertaKB2 extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setTitle("Form Peserta KB (2/6)");
     }
 
     public void goToFormPesertaKB3(View ev) {
         Intent intent = new Intent(this, ActivityFormPesertaKB3.class);
-        startActivity(intent);
+        startActivityForResult(intent, 1);
     }
 
     @Override
@@ -32,5 +32,14 @@ public class ActivityFormPesertaKB2 extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == 1) {
+            setResult(1);
+
+            finish();
+        }
     }
 }

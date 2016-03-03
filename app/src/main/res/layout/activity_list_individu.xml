@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_form"
     tools:context="com.altrovis.sigabkkbn.ActivityListIndividu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
 
     <RelativeLayout
         android:id="@+id/RelativeLayoutKeteranganKosong"
@@ -34,9 +39,10 @@
             android:id="@+id/ButtonNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/custom_style_button"
             android:text="LANJUT"
             android:textColor="#FFFFFF" />

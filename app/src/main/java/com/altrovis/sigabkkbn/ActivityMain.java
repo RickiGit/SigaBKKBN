@@ -27,10 +27,10 @@ public class ActivityMain extends AppCompatActivity {
         GridView gridView = (GridView) findViewById(R.id.GridViewMenu);
         final ArrayList<ItemMenu> listOfMenu = new ArrayList<ItemMenu>();
         listOfMenu.add(new ItemMenu(1, "Data Keluarga", R.drawable.menu_penduduk));
-        listOfMenu.add(new ItemMenu(2, "Pencarian", R.drawable.menu_pencarian));
-        listOfMenu.add(new ItemMenu(3, "Peralatan", R.drawable.menu_peralatan));
+        listOfMenu.add(new ItemMenu(2, "Peserta KB", R.drawable.menu_kb));
+        listOfMenu.add(new ItemMenu(3, "Pencarian", R.drawable.menu_pencarian));
         listOfMenu.add(new ItemMenu(4, "Laporan", R.drawable.menu_laporan));
-        listOfMenu.add(new ItemMenu(5, "Peserta KB", R.drawable.menu_kb));
+        listOfMenu.add(new ItemMenu(5, "Peralatan", R.drawable.menu_peralatan));
         listOfMenu.add(new ItemMenu(6, "Tentang", R.drawable.icon));
         GridViewAdapter adapter = new GridViewAdapter(this, R.layout.item_gridview_menu, listOfMenu);
         gridView.setAdapter(adapter);
@@ -38,21 +38,25 @@ public class ActivityMain extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position)
-                {
-                    case 0: Intent intent1 = new Intent(ActivityMain.this, ActivityDataKeluarga.class);
+                switch (position) {
+                    case 0:
+                        Intent intent1 = new Intent(ActivityMain.this, ActivityDataKeluarga.class);
                         startActivity(intent1);
                         break;
-                    case 1: Intent intent2 = new Intent(ActivityMain.this, ActivityPencarian.class);
+                    case 1:
+                        Intent intent2 = new Intent(ActivityMain.this, ActivityMenuPesertaKB.class);
                         startActivity(intent2);
                         break;
-                    case 4: Intent intent5 = new Intent(ActivityMain.this, ActivityMenuPesertaKB.class);
-                        startActivity(intent5);
+                    case 2:
+                        Intent intent3 = new Intent(ActivityMain.this, ActivityPencarian.class);
+                        startActivity(intent3);
                         break;
-                    case 5: Intent intent6 = new Intent(ActivityMain.this, ActivityTentang.class);
+                    case 5:
+                        Intent intent6 = new Intent(ActivityMain.this, ActivityTentang.class);
                         startActivity(intent6);
                         break;
-                    default:break;
+                    default:
+                        break;
                 }
             }
         });

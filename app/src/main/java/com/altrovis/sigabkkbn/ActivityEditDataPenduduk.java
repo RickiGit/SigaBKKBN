@@ -26,7 +26,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(false);
-        actionBar.setTitle("Edit Individu (2/2)");
+        actionBar.setTitle("Ubah Individu (2/2)");
 
         inisialisasiLayout();
         goToListIndividu();
@@ -186,8 +186,6 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //GlobalVariable.INDIVIDU_ADAPTER.add(GlobalVariable.NEW_INDIVIDU);
-                //GlobalVariable.NEW_INDIVIDU = null;
                 setResult(1);
                 finish();
             }

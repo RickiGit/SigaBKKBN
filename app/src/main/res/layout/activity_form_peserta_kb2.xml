@@ -3,249 +3,275 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_form"
     tools:context="com.altrovis.sigabkkbn.ActivityFormPesertaKB2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-            android:paddingBottom="100dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="III. Nama Peserta KB"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/EditTextNamaPesertaKB"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_form_input"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:singleLine="true"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"/>
+                android:singleLine="true" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="IV. Tanggal Lahir/Umur Istri"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tanggal Lahir Istri"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="Tanggal Lahir Istri"
+                android:textSize="15dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:id="@+id/EditTextTanggal"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:inputType="number"
-                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:background="@drawable/custom_form_input"
-                    android:layout_marginBottom="10dp"/>
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
                     android:text="-"
-                    android:textSize="22dp"
-                    android:layout_marginRight="5dp"/>
+                    android:textSize="22dp" />
+
                 <EditText
                     android:id="@+id/EditTextBulan"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:inputType="number"
-                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:background="@drawable/custom_form_input"
-                    android:layout_marginBottom="10dp"/>
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
                     android:text="-"
-                    android:textSize="22dp"
-                    android:layout_marginRight="5dp"/>
+                    android:textSize="22dp" />
+
                 <EditText
                     android:id="@+id/EditTextTahun"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:inputType="number"
-                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:background="@drawable/custom_form_input"
-                    android:layout_marginBottom="10dp"/>
+                    android:inputType="number"
+                    android:textAlignment="center" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Umur Istri"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="Umur Istri"
+                android:textSize="15dp" />
+
             <EditText
                 android:id="@+id/EditTextUmur"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
+                android:background="@drawable/custom_form_input"
                 android:enabled="true"
                 android:inputType="number"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="15dp"/>
+                android:paddingLeft="10dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="V. Nama Suami/Istri"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/EditTextNamaSuamiIstri"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_form_input"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:singleLine="true"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"/>
+                android:singleLine="true" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="VI. Pendidikan Suami dan Istri"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pendidikan Suami"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="Pendidikan Suami"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerPendidikanSuami"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
-                android:entries="@array/pendidikan"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/pendidikan" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pendidikan Istri"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="Pendidikan Istri"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerPendidikanIstri"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
-                android:entries="@array/pendidikan"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/pendidikan" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="VII. Alamat Peserta KB"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/EditTextAlamatPesertaKB"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_form_input"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:singleLine="true"
-                android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"/>
+                android:singleLine="true" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="VIII. Pekerjaan Suami dan Istri"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pekerjaan Suami"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="15dp"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="Pekerjaan Suami"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerPekerjaanSuami"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="15dp"
-                android:entries="@array/pekerjaan"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pekerjaan Istri"
-                android:layout_marginLeft="15dp"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
-            <Spinner
-                android:id="@+id/SpinnerPekerjaanIstri"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="15dp"
-                android:entries="@array/pekerjaan"
-                android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/pekerjaan" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Pekerjaan Istri"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/SpinnerPekerjaanIstri"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/custom_spinner"
+                android:entries="@array/pekerjaan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="IX. Penggunaan Asuransi"
-                android:textStyle="bold"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerPenggunaanAsuransi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/PenggunaanAsuransi"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/PenggunaanAsuransi" />
 
 
             <Button
                 android:id="@+id/ButtonNext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lanjut"
-                android:onClick="goToFormPesertaKB3"
+                android:layout_marginBottom="50dp"
                 android:layout_marginTop="20dp"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/custom_style_button"/>
+                android:background="@drawable/custom_style_button"
+                android:onClick="goToFormPesertaKB3"
+                android:text="Lanjut"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 

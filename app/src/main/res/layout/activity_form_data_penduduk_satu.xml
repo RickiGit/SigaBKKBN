@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_form"
     tools:context=".ActivityFormTambahDataPendudukSatu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -109,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"></Spinner>
+                android:layout_marginBottom="35dp"></Spinner>
 
             <Button
                 android:id="@+id/ButtonNext"

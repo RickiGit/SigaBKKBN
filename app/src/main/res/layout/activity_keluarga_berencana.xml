@@ -3,341 +3,377 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_form"
     tools:context="com.altrovis.sigabkkbn.ActivityKeluargaBerencana">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-            android:paddingBottom="100dp"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="1. Usia Kawin Pertama"
-                android:textStyle="bold"
                 android:textSize="18dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
                     android:text="a. Suami"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:text=""
-                    android:gravity="right"
-                    android:textAlignment="center"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Tahun"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="b. Istri"
                     android:layout_marginLeft="15dp"
-                    android:textSize="15dp"/>
+                    android:text="b. Istri"
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
+                    android:inputType="number"
                     android:text=""
                     android:textAlignment="center"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Tahun"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. Jumlah Anak"
-                android:textStyle="bold"
-                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="2. Jumlah Anak"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
                 android:text="a. Yang Pernah Dilahirkan Hidup"
                 android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="Laki-laki"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
+                    android:inputType="number"
                     android:text=""
                     android:textAlignment="center"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Orang"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="Perempuan"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:gravity="right"
-                    android:textAlignment="center"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Orang"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
                 android:text="b. Yang Masih Hidup"
                 android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="Laki-laki"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
-                    android:gravity="right"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Orang"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="Perempuan"
                     android:textSize="15dp"></TextView>
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
-                    android:gravity="right"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Orang"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:text="3. Kesertaan ber-KB"
                 android:textSize="18dp"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerKesertaanBerKB"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/KesertaanBerKB"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/KesertaanBerKB" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:text="4. Metode Kontrasepsi yang sedang/pernah digunakan"
                 android:textSize="18dp"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerMetodeKontrasepsi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/MetodeKontrasepsi"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/MetodeKontrasepsi" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:text="5. Bila sedang ber-KB, sudah berapa lama menggunakan metode kontrasepsi tersebut"
                 android:textSize="18dp"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp">
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
-                    android:gravity="right"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Tahun"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
+
                 <EditText
                     android:layout_width="40dp"
-                    android:layout_height="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
                     android:background="@drawable/custom_form_input"
-                    android:textAlignment="center"
-                    android:gravity="right"
                     android:inputType="number"
-                    android:textSize="15dp"/>
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Bulan"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:text="6. Apakah ingin punya anak lagi"
                 android:textSize="18dp"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerInginPunyaAnakLagi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/InginPunyaAnak"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/InginPunyaAnak" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="7. Alasan tidak ber-KB"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerAlasanTidakBerKB"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/AlasanTidakBerKB"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/AlasanTidakBerKB" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:text="8. Tempat Pelayanan KB"
                 android:textSize="18dp"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerTempatPelayananKB"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/TempatPelayananKB"
+                android:layout_marginBottom="35dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"/>
+                android:entries="@array/TempatPelayananKB" />
 
             <Button
                 android:id="@+id/ButtonNext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lanjut"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/custom_style_button"
                 android:onClick="goToPembangunanKeluarga1"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/custom_style_button"/>
+                android:text="Lanjut"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </ScrollView>

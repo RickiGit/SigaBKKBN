@@ -15,13 +15,14 @@ public class ActivityPembangunanKeluarga2 extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setTitle("Pembangunan Keluarga (2/2)");
     }
 
     public void goToMainMenu(View ev) {
-        Intent intent = new Intent(this, ActivityMain.class);
-        startActivity(intent);
+        setResult(1);
+
+        finish();
     }
 
     @Override

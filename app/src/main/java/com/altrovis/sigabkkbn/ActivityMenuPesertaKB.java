@@ -3,6 +3,7 @@ package com.altrovis.sigabkkbn;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -21,13 +22,13 @@ public class ActivityMenuPesertaKB extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setTitle("Peserta KB");
 
         GridView gridView = (GridView) findViewById(R.id.GridViewMenu);
         final ArrayList<ItemMenu> listOfMenu = new ArrayList<ItemMenu>();
         listOfMenu.add(new ItemMenu(1, "Tambah Data", R.drawable.menu_tambah));
-        listOfMenu.add(new ItemMenu(2, "Edit Data", R.drawable.menu_edit));
+        listOfMenu.add(new ItemMenu(2, "Ubah Data", R.drawable.menu_edit));
         listOfMenu.add(new ItemMenu(3, "Cari Data", R.drawable.menu_cari));
         GridViewAdapter adapter = new GridViewAdapter(this, R.layout.item_gridview_menu, listOfMenu);
         gridView.setAdapter(adapter);
@@ -46,5 +47,19 @@ public class ActivityMenuPesertaKB extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

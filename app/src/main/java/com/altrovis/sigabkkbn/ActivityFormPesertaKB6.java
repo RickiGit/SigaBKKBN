@@ -15,13 +15,14 @@ public class ActivityFormPesertaKB6 extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setTitle("Form Peserta KB (6/6)");
     }
 
     public void goToMenuAwal(View ev) {
-        Intent intent = new Intent(this, ActivityMain.class);
-        startActivity(intent);
+        setResult(1);
+
+        finish();
     }
 
     @Override

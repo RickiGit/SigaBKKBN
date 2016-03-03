@@ -3,213 +3,246 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_form"
     tools:context="com.altrovis.sigabkkbn.ActivityFormPesertaKB5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/background_form" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_margin="25dp"
-            android:paddingBottom="100dp">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="6. Keadaan Umum"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerKeadaanUmum"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/keadaanUmum"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/keadaanUmum"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7. Berat Badan"
+                android:layout_marginBottom="10dp"
                 android:inputType="number"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="7. Berat Badan"
+                android:textSize="15dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <EditText
                     android:id="@+id/EditTextBeratBadan"
                     android:layout_width="140dp"
                     android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_form_input"
+                    android:inputType="number"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:textAlignment="center"
-                    android:background="@drawable/custom_form_input"
-                    android:layout_marginBottom="10dp"
-                    android:inputType="number"/>
+                    android:textAlignment="center" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="Kg"/>
+                    android:text="Kg"
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8. Tekanan Darah"
+                android:layout_marginBottom="10dp"
                 android:inputType="number"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="8. Tekanan Darah"
+                android:textSize="15dp" />
+
             <EditText
                 android:id="@+id/EditTextNoKendali"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_form_input"
-                android:layout_marginBottom="10dp"/>
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
                 android:text="9. Sebelum dilakukan pemasangan IUD atau Tubektomi dilakukan pemeriksaan dalam :"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a. Tanda - tanda radang"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="a. Tanda - tanda radang"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerTandaRadang"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="28dp"
-                android:entries="@array/yesNo"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/yesNo"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="b. Tumor/keganasan ginekologi"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="b. Tumor/keganasan ginekologi"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerTumor"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="28dp"
-                android:entries="@array/yesNo"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/yesNo"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="10. Posisi Rahim"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerPosisiRahim"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/posisiRahim"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/posisiRahim"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
                 android:text="11. Pemeriksaan Tambahan (khusus untuk calon Vasektomi dan Tubektomi)"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a. Tanda - tanda diabetes"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="a. Tanda - tanda diabetes"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerDiabetes"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="28dp"
-                android:entries="@array/yesNo"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/yesNo"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="b. Kelainan pembekuan darah"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="b. Kelainan pembekuan darah"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerPembekuanDarah"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="28dp"
-                android:entries="@array/yesNo"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/yesNo"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="c. Radang orchitis/epididymitis"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="c. Radang orchitis/epididymitis"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerRadangOrchitis"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="28dp"
-                android:entries="@array/yesNo"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/yesNo"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="d. Tumor/keganasan ginekologi"
-                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="d. Tumor/keganasan ginekologi"
+                android:textSize="15dp" />
+
             <Spinner
                 android:id="@+id/SpinnerTumorKeganasanGinekologi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="28dp"
-                android:entries="@array/yesNo"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="10dp"></Spinner>
+                android:entries="@array/yesNo"></Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
                 android:text="12. Alat/obat/cara kontrasepsi yang boleh dipergunakan"
                 android:textSize="15dp"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/SpinnerAlatObat"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/alatObat"
+                android:layout_marginBottom="35dp"
                 android:background="@drawable/custom_spinner"
-                android:layout_marginBottom="15dp"></Spinner>
+                android:entries="@array/alatObat"></Spinner>
 
             <Button
                 android:id="@+id/ButtonNext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/custom_style_button"
                 android:onClick="goToFormPesertaKB6"
                 android:text="Lanjut"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/custom_style_button"/>
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </ScrollView>
