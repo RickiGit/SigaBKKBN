@@ -12,21 +12,25 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:src="@drawable/logo"
-                android:layout_gravity="center"/>
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/logo" />
+
             <TextView
                 android:layout_width="match_parent"
-                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Aplikasi Pendataan Keluarga (PK) 2015 digunakan untuk melakukan perekaman dan pengolahan Formulir Pendataan Data Keluarga menjadi Basis Data Keluarga. Formulir PK 2015 mencatat secara lengkap data keluarga yang meliputi informasi tentang kependudukan, keluarga berencana dan keluarga sejahtera serta tahapan keluarga sejahtera melalui kegiatan Pendataan Keluarga/Pemutakhiran Data Keluarga di seluruh tingkatan wilayah di Indonesia."/>
+                android:text="Aplikasi Pendataan Keluarga (PK) 2015 digunakan untuk melakukan perekaman dan pengolahan Formulir Pendataan Data Keluarga menjadi Basis Data Keluarga. Formulir PK 2015 mencatat secara lengkap data keluarga yang meliputi informasi tentang kependudukan, keluarga berencana dan keluarga sejahtera serta tahapan keluarga sejahtera melalui kegiatan Pendataan Keluarga/Pemutakhiran Data Keluarga di seluruh tingkatan wilayah di Indonesia."
+                android:textAlignment="center" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
