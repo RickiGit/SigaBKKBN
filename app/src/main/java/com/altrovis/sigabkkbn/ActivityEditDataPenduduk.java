@@ -2,6 +2,7 @@ package com.altrovis.sigabkkbn;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -24,7 +25,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setTitle("Edit Individu (2/2)");
 
         inisialisasiLayout();
@@ -57,7 +58,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         spinnerHubunganKK.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.NEW_INDIVIDU.setHubunganDenganKK(position);
+                individu.setHubunganDenganKK(position);
             }
 
             @Override
@@ -76,7 +77,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         spinnerJK.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.NEW_INDIVIDU.setJenisKelamin(position);
+                individu.setJenisKelamin(position);
             }
 
             @Override
@@ -95,7 +96,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         spinnerAgama.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.NEW_INDIVIDU.setAgama(position);
+                individu.setAgama(position);
             }
 
             @Override
@@ -114,7 +115,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         spinnerPendidikan.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.NEW_INDIVIDU.setPendidikan(position);
+                individu.setPendidikan(position);
             }
 
             @Override
@@ -133,7 +134,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         spinnerPekerjaan.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.NEW_INDIVIDU.setPekerjaan(position);
+                individu.setPekerjaan(position);
             }
 
             @Override
@@ -152,7 +153,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         spinnerStatusKawin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.NEW_INDIVIDU.setStatusKawin(position);
+                individu.setStatusKawin(position);
             }
 
             @Override
@@ -171,7 +172,7 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         spinnerJKN.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariable.NEW_INDIVIDU.setJKN(position);
+                individu.setJKN(position);
             }
 
             @Override
@@ -185,11 +186,25 @@ public class ActivityEditDataPenduduk extends AppCompatActivity {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GlobalVariable.INDIVIDU_ADAPTER.add(GlobalVariable.NEW_INDIVIDU);
-                GlobalVariable.NEW_INDIVIDU = null;
+                //GlobalVariable.INDIVIDU_ADAPTER.add(GlobalVariable.NEW_INDIVIDU);
+                //GlobalVariable.NEW_INDIVIDU = null;
                 setResult(1);
                 finish();
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -29,7 +29,7 @@ public class ActivityListIndividu extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setTitle("Kependudukan");
 
         inisialisasiLayout();
